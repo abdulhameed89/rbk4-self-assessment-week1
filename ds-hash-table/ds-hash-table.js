@@ -1,5 +1,5 @@
 var makeHashTable = function() {
-  //Do not change the max!
+ 
   var max = 4;
 
     return {
@@ -11,7 +11,7 @@ var makeHashTable = function() {
       insert: function(key, value) {
      var index= hashFn(key, max);
      if (!this._storage[index]) {// check if it is not defined
-        this._storage[index] = value
+        this._storage[index] = value;
          }
       else{
         this._storage[index].push([value]);

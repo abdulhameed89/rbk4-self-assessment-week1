@@ -5,7 +5,7 @@ var Stack = function() {
     };
     this.remove = function() {
       if (this._storage.length-1) {
-      	var removed=this._storage.length-1;
+      	var removed=this._storage[this._storage.length-1];
       this._storage.splice(this._storage.length-1,1);
       return removed;
       }
